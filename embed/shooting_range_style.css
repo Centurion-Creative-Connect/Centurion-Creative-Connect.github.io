@@ -22,7 +22,6 @@ a:hover {
 main {
     max-width: 1300px;
     margin: auto;
-    padding: 0 45px;
     color: #f8f9fa;
     background-color: #0e1013;
 }
@@ -45,9 +44,7 @@ div {
 }
 
 .row {
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 1vh 1vw;
     flex-wrap: wrap;
 }
 
