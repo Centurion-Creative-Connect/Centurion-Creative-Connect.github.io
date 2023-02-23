@@ -1,6 +1,12 @@
 root {
     background-clip: border-box;
+    color: #f8f9fa;
+    background-color: #0e1013;
+}
 
+main {
+    min-height: 95vh;
+    min-width: 95vh;
 }
 
 h2 {
@@ -17,12 +23,6 @@ a {
 a:hover {
     text-decoration: underline;
     color: #096c7b;
-}
-
-main {
-    margin: auto;
-    color: #f8f9fa;
-    background-color: #0e1013;
 }
 
 body {
@@ -43,7 +43,7 @@ div {
 }
 
 .row {
-    margin: 1vh 1vw;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -88,8 +88,7 @@ div {
 }
 
 .world-image {
-    flex: 1 1 300px;
-    height: 50vh;
+    flex: 5 1 60vh;
     margin: 10px;
     border-radius: 15px;
     background-image: url("/images/centurion_shooting_range_thumbnail.png");
@@ -99,11 +98,12 @@ div {
 
 .card {
     position: center;
+    margin: 15px;
     flex: 1 1 auto;
     flex-wrap: wrap !important;
-    flex-direction: row;
-    width: 90vw;
-    height: 90vh;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
     word-wrap: break-word;
     display: flex !important;
     background-clip: border-box;
@@ -141,9 +141,10 @@ div {
 
 .flex-col {
     display: flex;
-    flex: auto;
+    flex: 1 1 auto;
     flex-wrap: wrap !important;
     flex-direction: column;
+    flex-basis: max-content;
     align-items: center;
 }
 
