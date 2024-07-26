@@ -2,72 +2,7 @@ import Layout from '@theme/Layout';
 import styles from './styles.module.css';
 import Heading from "@theme/Heading";
 import React from "react";
-
-const EventStaffList = [{
-    name: "Nuinomi", image: require("/static/img/profile/nuinomi.jpg").default, description: <>オーナー
-        <ul>
-            <li>モデル制作</li>
-            <li>マップ制作</li>
-            <li>公式Twitter運営</li>
-        </ul>
-    </>, x_url: "https://twitter.com/Nuinomi_9193",
-}, {
-    name: "DerpyNewbie", image: require("/static/img/profile/derpynewbie.jpg").default, description: <>プログラマー
-        <ul>
-            <li>うにちーえんじにあ</li>
-            <li>うぇぶえんじにあ</li>
-        </ul>
-    </>, x_url: "https://twitter.com/DerpyNewbie",
-}, {
-    name: "at_suma", image: require("/static/img/profile/suma.jpg").default, description: <>メインスタッフ <ul>
-        <li>広報担当・動画制作</li>
-    </ul></>, x_url: "https://twitter.com/suma_VRC",
-}, {
-    name: "キンロク", image: require("/static/img/profile/kinroku.jpg").default, description: <>メインスタッフ
-        <ul>
-            <li>マップ制作</li>
-        </ul>
-    </>, x_url: "https://twitter.com/Chiquita_Dforce",
-}, {
-    name: "Sweet [甘王] king", image: require("/static/img/profile/amaou.jpg").default, description: <>サブスタッフ
-        <ul>
-            <li>マップ制作</li>
-        </ul>
-    </>, x_url: "https://twitter.com/KING84196979",
-},];
-
-const ProdStaffList = [{
-    name: "Gelato_RF",
-    image: require("/static/img/profile/gelatorf.png").default,
-    description: <>マップ制作・サンプルアバター調整</>,
-    x_url: "https://twitter.com/Gepard_RF"
-}, {
-    name: "えるびー",
-    image: require("/static/img/profile/elvie.png").default,
-    description: <>広報担当・動画制作</>,
-    x_url: "https://twitter.com/ElviE___"
-}, {
-    name: "claudia-s",
-    image: require("/static/img/profile/claudia.png").default,
-    description: <>公式ホームページ運営</>,
-    x_url: "https://twitter.com/clau_dia_s"
-}];
-
-const SpecialThanksList = [{
-    name: "しげひろ deNAFUCO", description: <>貸出アバター</>, x_url: "https://twitter.com/gaku2_sigehiro",
-}, {
-    name: "くっしーEX", description: <>SE制作、編集</>, x_url: "https://twitter.com/feriaEX"
-}, {
-    name: "葉月しおん", description: <>動画BGM作成</>, x_url: "https://twitter.com/haduki4499"
-}, {
-    name: "だめがね", description: <>ポスター制作</>, x_url: "https://twitter.com/emegane1029"
-}, {
-    name: "6t", description: <>紹介漫画</>, x_url: "https://twitter.com/unko_6t"
-}, {
-    name: "こひきすん", description: <>CCCロゴ制作</>, x_url: "https://twitter.com/kopikopimura"
-}]
-
-const TesterList = ["HachinoSagiri", "JP_ARMY0506", "KawaiiFuguri", "Ken_Rou", "Laika_2057", "Mkroid", "NAKADARARIRI", "Niente_neu", "TOO", "Yamasan1107", "aini_bellwood", "denirou", "els00", "garitotu", "green101", "hawasabimaru", "holo.er", "maidkarma", "maitakenitohe", "miyabi_12", "miyukichi", "seilin", "がらくた工廠", "きりゅー", "こひきすん", "さばてん（sabaten）", "しんおじ", "すももの", "ぷりばて", "ろくちゃ", "イチゴのアメ", "カズゴン@とらきゃっと", "小桜夜継", "白紙さん", "芳井はじめ"]
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 function Staff({name, image, description, x_url}) {
     return (<div className={"card"} style={{margin: 14 + "px"}}>
@@ -98,6 +33,72 @@ function SpecialThanks({name, description, x_url}) {
 }
 
 export default function Index() {
+    const EventStaffList = [{
+        name: "Nuinomi", image: useBaseUrl("/img/profile/nuinomi.jpg"), description: <>オーナー
+            <ul>
+                <li>モデル制作</li>
+                <li>マップ制作</li>
+                <li>公式Twitter運営</li>
+            </ul>
+        </>, x_url: "https://twitter.com/Nuinomi_9193",
+    }, {
+        name: "DerpyNewbie", image: useBaseUrl("/img/profile/derpynewbie.jpg"), description: <>プログラマー
+            <ul>
+                <li>うにちーえんじにあ</li>
+                <li>うぇぶえんじにあ</li>
+            </ul>
+        </>, x_url: "https://twitter.com/DerpyNewbie",
+    }, {
+        name: "at_suma", image: useBaseUrl("/img/profile/suma.jpg"), description: <>メインスタッフ <ul>
+            <li>広報担当・動画制作</li>
+        </ul></>, x_url: "https://twitter.com/suma_VRC",
+    }, {
+        name: "キンロク", image: useBaseUrl("/img/profile/kinroku.jpg"), description: <>メインスタッフ
+            <ul>
+                <li>マップ制作</li>
+            </ul>
+        </>, x_url: "https://twitter.com/Chiquita_Dforce",
+    }, {
+        name: "Sweet [甘王] king", image: useBaseUrl("/img/profile/amaou.jpg"), description: <>サブスタッフ
+            <ul>
+                <li>マップ制作</li>
+            </ul>
+        </>, x_url: "https://twitter.com/KING84196979",
+    },];
+
+    const ProdStaffList = [{
+        name: "Gelato_RF",
+        image: useBaseUrl("/img/profile/gelatorf.png"),
+        description: <>マップ制作・サンプルアバター調整</>,
+        x_url: "https://twitter.com/Gepard_RF"
+    }, {
+        name: "えるびー",
+        image: useBaseUrl("/img/profile/elvie.png"),
+        description: <>広報担当・動画制作</>,
+        x_url: "https://twitter.com/ElviE___"
+    }, {
+        name: "claudia-s",
+        image: useBaseUrl("/img/profile/claudia.png"),
+        description: <>公式ホームページ運営</>,
+        x_url: "https://twitter.com/clau_dia_s"
+    }];
+
+    const SpecialThanksList = [{
+        name: "しげひろ deNAFUCO", description: <>貸出アバター</>, x_url: "https://twitter.com/gaku2_sigehiro",
+    }, {
+        name: "くっしーEX", description: <>SE制作、編集</>, x_url: "https://twitter.com/feriaEX"
+    }, {
+        name: "葉月しおん", description: <>動画BGM作成</>, x_url: "https://twitter.com/haduki4499"
+    }, {
+        name: "だめがね", description: <>ポスター制作</>, x_url: "https://twitter.com/emegane1029"
+    }, {
+        name: "6t", description: <>紹介漫画</>, x_url: "https://twitter.com/unko_6t"
+    }, {
+        name: "こひきすん", description: <>CCCロゴ制作</>, x_url: "https://twitter.com/kopikopimura"
+    }]
+
+    const TesterList = ["HachinoSagiri", "JP_ARMY0506", "KawaiiFuguri", "Ken_Rou", "Laika_2057", "Mkroid", "NAKADARARIRI", "Niente_neu", "TOO", "Yamasan1107", "aini_bellwood", "denirou", "els00", "garitotu", "green101", "hawasabimaru", "holo.er", "maidkarma", "maitakenitohe", "miyabi_12", "miyukichi", "seilin", "がらくた工廠", "きりゅー", "こひきすん", "さばてん（sabaten）", "しんおじ", "すももの", "ぷりばて", "ろくちゃ", "イチゴのアメ", "カズゴン@とらきゃっと", "小桜夜継", "白紙さん", "芳井はじめ"]
+
     return (<Layout
         title={`Staff & Credit`}
         description="List of current staff and alpha testers">
