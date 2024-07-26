@@ -1,11 +1,10 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from '@theme/Layout';
 import styles from './styles.module.css';
 import Heading from "@theme/Heading";
 import React from "react";
 
 const EventStaffList = [{
-    name: "Nuinomi", image: require("@site/static/img/profile/nuinomi.jpg").default, description: <>オーナー
+    name: "Nuinomi", image: require("/static/img/profile/nuinomi.jpg").default, description: <>オーナー
         <ul>
             <li>モデル制作</li>
             <li>マップ制作</li>
@@ -13,24 +12,24 @@ const EventStaffList = [{
         </ul>
     </>, x_url: "https://twitter.com/Nuinomi_9193",
 }, {
-    name: "DerpyNewbie", image: require("@site/static/img/profile/derpynewbie.jpg").default, description: <>プログラマー
+    name: "DerpyNewbie", image: require("/static/img/profile/derpynewbie.jpg").default, description: <>プログラマー
         <ul>
             <li>うにちーえんじにあ</li>
             <li>うぇぶえんじにあ</li>
         </ul>
     </>, x_url: "https://twitter.com/DerpyNewbie",
 }, {
-    name: "at_suma", image: require("@site/static/img/profile/suma.jpg").default, description: <>メインスタッフ <ul>
+    name: "at_suma", image: require("/static/img/profile/suma.jpg").default, description: <>メインスタッフ <ul>
         <li>広報担当・動画制作</li>
     </ul></>, x_url: "https://twitter.com/suma_VRC",
 }, {
-    name: "キンロク", image: require("@site/static/img/profile/kinroku.jpg").default, description: <>メインスタッフ
+    name: "キンロク", image: require("/static/img/profile/kinroku.jpg").default, description: <>メインスタッフ
         <ul>
             <li>マップ制作</li>
         </ul>
     </>, x_url: "https://twitter.com/Chiquita_Dforce",
 }, {
-    name: "Sweet [甘王] king", image: require("@site/static/img/profile/amaou.jpg").default, description: <>サブスタッフ
+    name: "Sweet [甘王] king", image: require("/static/img/profile/amaou.jpg").default, description: <>サブスタッフ
         <ul>
             <li>マップ制作</li>
         </ul>
@@ -39,17 +38,17 @@ const EventStaffList = [{
 
 const ProdStaffList = [{
     name: "Gelato_RF",
-    image: require("@site/static/img/profile/gelatorf.png").default,
+    image: require("/static/img/profile/gelatorf.png").default,
     description: <>マップ制作・サンプルアバター調整</>,
     x_url: "https://twitter.com/Gepard_RF"
 }, {
     name: "えるびー",
-    image: require("@site/static/img/profile/elvie.png").default,
+    image: require("/static/img/profile/elvie.png").default,
     description: <>広報担当・動画制作</>,
     x_url: "https://twitter.com/ElviE___"
 }, {
     name: "claudia-s",
-    image: require("@site/static/img/profile/claudia.png").default,
+    image: require("/static/img/profile/claudia.png").default,
     description: <>公式ホームページ運営</>,
     x_url: "https://twitter.com/clau_dia_s"
 }];
@@ -99,7 +98,6 @@ function SpecialThanks({name, description, x_url}) {
 }
 
 export default function Index() {
-    const {siteConfig} = useDocusaurusContext();
     return (<Layout
         title={`Staff & Credit`}
         description="List of current staff and alpha testers">
@@ -113,7 +111,7 @@ export default function Index() {
                     <h2 className={"text--center"}>イベントスタッフ</h2>
                     <div className={"container"}>
                         <div className={"row"} style={{justifyContent: "center"}}>
-                            {EventStaffList.map((staff, idx) => (
+                            {EventStaffList.map((staff,) => (
                                 <Staff name={staff.name} image={staff.image} description={staff.description}
                                        x_url={staff.x_url}/>))}
                         </div>
@@ -125,7 +123,7 @@ export default function Index() {
                     <h2 className={"text--center"}>プロダクションスタッフ</h2>
                     <div className={"Container"}>
                         <div className={"row"} style={{justifyContent: "center"}}>
-                            {ProdStaffList.map((staff, idx) => (
+                            {ProdStaffList.map((staff,) => (
                                 <Staff name={staff.name} image={staff.image} description={staff.description}
                                        x_url={staff.x_url}/>))}
                         </div>
@@ -140,7 +138,7 @@ export default function Index() {
                         <div className={styles.credits + " col"}>
                             <h2 className={"text--center"}>Special Thanks</h2>
                             <table className={styles.creditsTable}>
-                                {SpecialThanksList.map((i, idx) => (
+                                {SpecialThanksList.map((i,) => (
                                     <SpecialThanks name={i.name} description={i.description} x_url={i.x_url}/>))}
                             </table>
                         </div>
@@ -149,7 +147,7 @@ export default function Index() {
                             <table className={styles.creditsTable}>
                                 <tbody>
                                 <tr>
-                                    {TesterList.map((i, idx) => (
+                                    {TesterList.map((i,) => (
                                         <th>{i}</th>
                                     ))}
                                 </tr>
