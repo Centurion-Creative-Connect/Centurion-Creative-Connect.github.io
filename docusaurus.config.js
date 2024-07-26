@@ -54,9 +54,7 @@ const config = {
                     to: '/access', label: 'Access', position: 'left'
                 }, {to: '/faq', label: 'FAQ', position: 'left'}, {
                     to: '/blog', label: 'Blog', position: 'left'
-                }, {to: '/docs/intro', label: 'Docs', position: 'left'}, /* {
-                    href: 'https://github.com/facebook/docusaurus', label: 'GitHub', position: 'right',
-                }, */{
+                }, {
                     href: 'https://www.youtube.com/channel/UC7IM88tUXpViibgt24pN0oA',
                     position: 'right',
                     className: 'icon icon-youtube'
