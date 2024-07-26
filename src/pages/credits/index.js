@@ -2,7 +2,7 @@ import Layout from '@theme/Layout';
 import styles from './styles.module.css';
 import Heading from "@theme/Heading";
 import React from "react";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import require from "@docusaurus/require";
 
 function Staff({name, image, description, x_url}) {
     return (<div className={"card"} style={{margin: 14 + "px"}}>
@@ -34,7 +34,7 @@ function SpecialThanks({name, description, x_url}) {
 
 export default function Index() {
     const EventStaffList = [{
-        name: "Nuinomi", image: useBaseUrl("/img/profile/nuinomi.jpg"), description: <>オーナー
+        name: "Nuinomi", image: require("@site/img/profile/nuinomi.jpg").default, description: <>オーナー
             <ul>
                 <li>モデル制作</li>
                 <li>マップ制作</li>
@@ -42,24 +42,24 @@ export default function Index() {
             </ul>
         </>, x_url: "https://twitter.com/Nuinomi_9193",
     }, {
-        name: "DerpyNewbie", image: useBaseUrl("/img/profile/derpynewbie.jpg"), description: <>プログラマー
+        name: "DerpyNewbie", image: require("@site/img/profile/derpynewbie.jpg").default, description: <>プログラマー
             <ul>
                 <li>うにちーえんじにあ</li>
                 <li>うぇぶえんじにあ</li>
             </ul>
         </>, x_url: "https://twitter.com/DerpyNewbie",
     }, {
-        name: "at_suma", image: useBaseUrl("/img/profile/suma.jpg"), description: <>メインスタッフ <ul>
+        name: "at_suma", image: require("@site/img/profile/suma.jpg").default, description: <>メインスタッフ <ul>
             <li>広報担当・動画制作</li>
         </ul></>, x_url: "https://twitter.com/suma_VRC",
     }, {
-        name: "キンロク", image: useBaseUrl("/img/profile/kinroku.jpg"), description: <>メインスタッフ
+        name: "キンロク", image: require("@site/img/profile/kinroku.jpg").default, description: <>メインスタッフ
             <ul>
                 <li>マップ制作</li>
             </ul>
         </>, x_url: "https://twitter.com/Chiquita_Dforce",
     }, {
-        name: "Sweet [甘王] king", image: useBaseUrl("/img/profile/amaou.jpg"), description: <>サブスタッフ
+        name: "Sweet [甘王] king", image: require("@site/img/profile/amaou.jpg").default, description: <>サブスタッフ
             <ul>
                 <li>マップ制作</li>
             </ul>
@@ -68,17 +68,17 @@ export default function Index() {
 
     const ProdStaffList = [{
         name: "Gelato_RF",
-        image: useBaseUrl("/img/profile/gelatorf.png"),
+        image: require("@site/img/profile/gelatorf.png").default,
         description: <>マップ制作・サンプルアバター調整</>,
         x_url: "https://twitter.com/Gepard_RF"
     }, {
         name: "えるびー",
-        image: useBaseUrl("/img/profile/elvie.png"),
+        image: require("@site/img/profile/elvie.png").default,
         description: <>広報担当・動画制作</>,
         x_url: "https://twitter.com/ElviE___"
     }, {
         name: "claudia-s",
-        image: useBaseUrl("/img/profile/claudia.png"),
+        image: require("@site/img/profile/claudia.png").default,
         description: <>公式ホームページ運営</>,
         x_url: "https://twitter.com/clau_dia_s"
     }];
