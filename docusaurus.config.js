@@ -63,7 +63,7 @@ const config = {
                 style: 'dark',
                 links: [{
                     title: 'Docs', items: [{
-                        label: 'System', href: 'https://staging.centurioncc.org/docs-system/',
+                        label: 'System', href: 'https://system.centurioncc.org/',
                     }, {
                         label: 'System.Commands', href: 'https://staging.centurioncc.org/docs-system-commands/'
                     }, {
