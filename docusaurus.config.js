@@ -20,7 +20,7 @@ const config = {
     organizationName: 'centurion-creative-connect', // Usually your GitHub org/user name.
     projectName: 'centurion-creative-connect.github.io', // Usually your repo name.
 
-    trailingSlash: true,
+    trailingSlash: true, noIndex: true,
 
     onBrokenLinks: 'warn', onBrokenMarkdownLinks: 'warn',
 
