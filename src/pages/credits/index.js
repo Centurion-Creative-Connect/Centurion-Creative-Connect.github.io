@@ -33,7 +33,7 @@ function SpecialThanks({name, description, x_url}) {
 
 export default function Index() {
     const EventStaffList = [{
-        name: "Nuinomi", image: require("@site/static/img/profile/nuinomi.jpg").default, description: <>オーナー
+        name: "Nuinomi", image: require("@site/static/img/profile/Nuinomi.jpg").default, description: <>オーナー
             <ul>
                 <li>モデル制作</li>
                 <li>マップ制作</li>
@@ -41,24 +41,24 @@ export default function Index() {
             </ul>
         </>, x_url: "https://twitter.com/Nuinomi_9193",
     }, {
-        name: "DerpyNewbie", image: require("@site/static/img/profile/derpynewbie.jpg").default, description: <>プログラマー
+        name: "DerpyNewbie", image: require("@site/static/img/profile/DerpyNewbie.jpg").default, description: <>プログラマー
             <ul>
                 <li>うにちーえんじにあ</li>
                 <li>うぇぶえんじにあ</li>
             </ul>
         </>, x_url: "https://twitter.com/DerpyNewbie",
     }, {
-        name: "at_suma", image: require("@site/static/img/profile/suma.jpg").default, description: <>メインスタッフ <ul>
+        name: "at_suma", image: require("@site/static/img/profile/Suma.jpg").default, description: <>メインスタッフ <ul>
             <li>広報担当・動画制作</li>
         </ul></>, x_url: "https://twitter.com/suma_VRC",
     }, {
-        name: "キンロク", image: require("@site/static/img/profile/kinroku.jpg").default, description: <>メインスタッフ
+        name: "キンロク", image: require("@site/static/img/profile/Kinroku.jpg").default, description: <>メインスタッフ
             <ul>
                 <li>マップ制作</li>
             </ul>
         </>, x_url: "https://twitter.com/Chiquita_Dforce",
     }, {
-        name: "Sweet [甘王] king", image: require("@site/static/img/profile/amaou.jpg").default, description: <>サブスタッフ
+        name: "Sweet [甘王] king", image: require("@site/static/img/profile/Amaou.jpg").default, description: <>サブスタッフ
             <ul>
                 <li>マップ制作</li>
             </ul>
@@ -67,17 +67,17 @@ export default function Index() {
 
     const ProdStaffList = [{
         name: "Gelato_RF",
-        image: require("@site/static/img/profile/gelatorf.png").default,
+        image: require("@site/static/img/profile/GelatoRf.png").default,
         description: <>マップ制作・サンプルアバター調整</>,
         x_url: "https://twitter.com/Gepard_RF"
     }, {
         name: "えるびー",
-        image: require("@site/static/img/profile/elvie.png").default,
+        image: require("@site/static/img/profile/Elvie.png").default,
         description: <>広報担当・動画制作</>,
         x_url: "https://twitter.com/ElviE___"
     }, {
         name: "claudia-s",
-        image: require("@site/static/img/profile/claudia.png").default,
+        image: require("@site/static/img/profile/Claudia.png").default,
         description: <>公式ホームページ運営</>,
         x_url: "https://twitter.com/clau_dia_s"
     }];
