@@ -67,7 +67,7 @@ export default function Index() {
 
     const ProdStaffList = [{
         name: "Gelato_RF",
-        image: require("@site/static/img/profile/GelatoRf.png").default,
+        image: require("@site/static/img/profile/GelatoRF.png").default,
         description: <>マップ制作・サンプルアバター調整</>,
         x_url: "https://twitter.com/Gepard_RF"
     }, {
