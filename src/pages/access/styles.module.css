@@ -1,0 +1,11 @@
+.shootingRangeThumb1, .shootingRangeThumb2 {
+    width: 420px;
+    height: 240px;
+    object-fit: cover;
+    border-width: 8px;
+    border-style: solid;
+    border-image-source: linear-gradient(20deg, #21afaa, #29c1d5);
+    border-image-slice: 1;
+    /* TODO: it isnt working??? */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}

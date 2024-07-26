@@ -1,0 +1,56 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-background-color: white;
+    --ifm-color-primary: #2e8585;
+    --ifm-color-primary-dark: #296c78;
+    --ifm-color-primary-darker: #275571;
+    --ifm-color-primary-darkest: #20465d;
+    --ifm-color-primary-light: #336a92;
+    --ifm-color-primary-lighter: #357399;
+    --ifm-color-primary-lightest: #3c8bad;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --icon-youtube: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%2C0%2C256%2C256%22%3E%3Cg%20fill%3D%22%23000000%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22butt%22%20stroke-linejoin%3D%22miter%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%20stroke-dashoffset%3D%220%22%20font-family%3D%22none%22%20font-weight%3D%22none%22%20font-size%3D%22none%22%20text-anchor%3D%22none%22%20style%3D%22mix-blend-mode%3A%20normal%22%3E%3Cg%20transform%3D%22scale(5.12%2C5.12)%22%3E%3Cpath%20d%3D%22M44.89844%2C14.5c-0.39844%2C-2.19922%20-2.29687%2C-3.80078%20-4.5%2C-4.30078c-3.29687%2C-0.69922%20-9.39844%2C-1.19922%20-16%2C-1.19922c-6.59766%2C0%20-12.79687%2C0.5%20-16.09766%2C1.19922c-2.19922%2C0.5%20-4.10156%2C2%20-4.5%2C4.30078c-0.40234%2C2.5%20-0.80078%2C6%20-0.80078%2C10.5c0%2C4.5%200.39844%2C8%200.89844%2C10.5c0.40234%2C2.19922%202.30078%2C3.80078%204.5%2C4.30078c3.5%2C0.69922%209.5%2C1.19922%2016.10156%2C1.19922c6.60156%2C0%2012.60156%2C-0.5%2016.10156%2C-1.19922c2.19922%2C-0.5%204.09766%2C-2%204.5%2C-4.30078c0.39844%2C-2.5%200.89844%2C-6.10156%201%2C-10.5c-0.20312%2C-4.5%20-0.70312%2C-8%20-1.20312%2C-10.5zM19%2C32v-14l12.19922%2C7z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    --icon-x: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%2C0%2C256%2C256%22%3E%3Cg%20fill%3D%22%23000000%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22butt%22%20stroke-linejoin%3D%22miter%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%20stroke-dashoffset%3D%220%22%20font-family%3D%22none%22%20font-weight%3D%22none%22%20font-size%3D%22none%22%20text-anchor%3D%22none%22%20style%3D%22mix-blend-mode%3A%20normal%22%3E%3Cg%20transform%3D%22scale(8.53333%2C8.53333)%22%3E%3Cpath%20d%3D%22M26.37%2C26l-8.795%2C-12.822l0.015%2C0.012l7.93%2C-9.19h-2.65l-6.46%2C7.48l-5.13%2C-7.48h-6.95l8.211%2C11.971l-0.001%2C-0.001l-8.66%2C10.03h2.65l7.182%2C-8.322l5.708%2C8.322zM10.23%2C6l12.34%2C18h-2.1l-12.35%2C-18z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --ifm-color-primary: #25aac2;
+    --ifm-color-primary-dark: #21afaa;
+    --ifm-color-primary-darker: #1f9aa5;
+    --ifm-color-primary-darkest: #1a8488;
+    --ifm-color-primary-light: #29c1d5;
+    --ifm-color-primary-lighter: #32bad8;
+    --ifm-color-primary-lightest: #4fbcdd;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --icon-youtube: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%2C0%2C256%2C256%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22butt%22%20stroke-linejoin%3D%22miter%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%20stroke-dashoffset%3D%220%22%20font-family%3D%22none%22%20font-weight%3D%22none%22%20font-size%3D%22none%22%20text-anchor%3D%22none%22%20style%3D%22mix-blend-mode%3A%20normal%22%3E%3Cg%20transform%3D%22scale(5.12%2C5.12)%22%3E%3Cpath%20d%3D%22M44.89844%2C14.5c-0.39844%2C-2.19922%20-2.29687%2C-3.80078%20-4.5%2C-4.30078c-3.29687%2C-0.69922%20-9.39844%2C-1.19922%20-16%2C-1.19922c-6.59766%2C0%20-12.79687%2C0.5%20-16.09766%2C1.19922c-2.19922%2C0.5%20-4.10156%2C2%20-4.5%2C4.30078c-0.40234%2C2.5%20-0.80078%2C6%20-0.80078%2C10.5c0%2C4.5%200.39844%2C8%200.89844%2C10.5c0.40234%2C2.19922%202.30078%2C3.80078%204.5%2C4.30078c3.5%2C0.69922%209.5%2C1.19922%2016.10156%2C1.19922c6.60156%2C0%2012.60156%2C-0.5%2016.10156%2C-1.19922c2.19922%2C-0.5%204.09766%2C-2%204.5%2C-4.30078c0.39844%2C-2.5%200.89844%2C-6.10156%201%2C-10.5c-0.20312%2C-4.5%20-0.70312%2C-8%20-1.20312%2C-10.5zM19%2C32v-14l12.19922%2C7z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    --icon-x: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%2C0%2C256%2C256%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22butt%22%20stroke-linejoin%3D%22miter%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%20stroke-dashoffset%3D%220%22%20font-family%3D%22none%22%20font-weight%3D%22none%22%20font-size%3D%22none%22%20text-anchor%3D%22none%22%20style%3D%22mix-blend-mode%3A%20normal%22%3E%3Cg%20transform%3D%22scale(8.53333%2C8.53333)%22%3E%3Cpath%20d%3D%22M26.37%2C26l-8.795%2C-12.822l0.015%2C0.012l7.93%2C-9.19h-2.65l-6.46%2C7.48l-5.13%2C-7.48h-6.95l8.211%2C11.971l-0.001%2C-0.001l-8.66%2C10.03h2.65l7.182%2C-8.322l5.708%2C8.322zM10.23%2C6l12.34%2C18h-2.1l-12.35%2C-18z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--ifm-color-primary);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+.icon-youtube {
+    background-image: var(--icon-youtube);
+}
+
+.icon-x {
+    background-image: var(--icon-x);
+}

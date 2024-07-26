@@ -1,0 +1,50 @@
+.vrcLikeEmbedCard {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    max-width: 50rem;
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration: none !important;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.vrcLikeEmbedTitle {
+    padding: .5rem 2.5%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.vrcLikeEmbedHeader {
+    background-color: rgb(37, 42, 48);
+    border-radius: 8px 8px 0 0;
+}
+
+.vrcLikeEmbedDescription {
+    background-color: rgb(24, 27, 31);
+    color: rgb(115, 115, 114);
+    padding: 0.5rem 2.5%;
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.vrcLikeEmbedBanner {
+    width: 95%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.vrcLikeEmbedIcon {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 3px solid rgb(24, 27, 31);
+    background-color: rgb(24, 27, 31);
+}

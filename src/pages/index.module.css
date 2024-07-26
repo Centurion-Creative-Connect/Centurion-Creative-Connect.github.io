@@ -1,0 +1,140 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@500;900&family=Sawarabi+Mincho&display=swap');
+
+.indexHeader {
+    height: 100vh;
+}
+
+.backgroundVideo {
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.catchCopy {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    color: whitesmoke;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Sawarabi Mincho', serif;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0, rgba(254, 1, 1, 0.298039) -3px -3px 0;
+    opacity: 0;
+    animation: fade-and-slide-in 2s ease-in-out forwards;
+
+    span {
+        margin: auto;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+    }
+
+    rt {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        opacity: 0;
+        animation: fade-and-slide-in 2s ease-in-out forwards;
+        animation-delay: 1s;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fade-in 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-and-slide-in {
+    20% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+.bigFirstLetter::first-letter {
+    font-size: 150%;
+    font-weight: 900;
+}
+
+.parallaxPanel {
+    z-index: 20;
+    padding: 4rem;
+    height: 24rem;
+}
+
+.panel {
+    padding: 4rem;
+    /* background-position: center 0; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-clip: inherit;
+
+    div {
+        font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif;
+        margin: 0 auto;
+        padding: 2rem;
+        max-width: 50rem;
+        filter: drop-shadow(0 0 0.75rem var(--ifm-background-color));
+        background-color: color-mix(in srgb, var(--ifm-background-color) 75%, transparent);
+        border-radius: 20px
+    }
+}
+
+.whoAreWe {
+    background-image: url("/static/img/20220718033800_1.jpg");
+}
+
+.news {
+    background-image: url("/static/img/20220721015117_1_edited.jpg");
+}
+
+.heroBanner {
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 996px) {
+    .heroBanner {
+        padding: 2rem;
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
