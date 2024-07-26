@@ -63,11 +63,12 @@ const config = {
                 style: 'dark',
                 links: [{
                     title: 'Docs', items: [{
-                        label: 'System', to: '/docs-system/',
+                        label: 'System', href: 'https://staging.centurioncc.org/docs-system/',
                     }, {
-                        label: 'System.Commands', to: '/docs-system-commands/'
+                        label: 'System.Commands', href: 'https://staging.centurioncc.org/docs-system-commands/'
                     }, {
-                        label: 'System.VoiceCommsIntegration', to: '/docs-system-voice-comms-integration/'
+                        label: 'System.VoiceCommsIntegration',
+                        href: 'https://staging.centurioncc.org/docs-system-voice-comms-integration/'
                     },],
                 }, {
                     title: 'Community', items: [{
