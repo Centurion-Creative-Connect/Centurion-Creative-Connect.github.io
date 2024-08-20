@@ -1,7 +1,7 @@
 ---
-title: authorテスト
-description: てすてす
-slug: author-test
+title: authors-preview
+description: for every authors
+slug: authors-preview
 authors:
   - nuinomi
   - derpynewbie
@@ -11,6 +11,8 @@ authors:
   - gelato
   - elvie
   - claudia
+draft: false
+unlisted: true
 ---
 
-てすてす
+設定済みのすべての執筆者表示するプレビューです
