@@ -16,7 +16,7 @@ export default function AccessPage() {
                         <span className={"catchCopy"}>VRChatなら徒歩0分！</span>
                         <p>当イベントはVRChatのGroupインスタンスにて開催しておりますので、事前にグループへの参加を済ませていただくようお願いしております。</p>
                         <p>
-                            <a>こちらのリンク</a>、またはVRChat内でグループID <code>CCCOEG.3895</code> を検索し参加したのち、開催時間になりましたらGroupインスタンスにJoinをお願いします。
+                            <a href={"/vrcgroup"}>こちらのリンク</a>、またはVRChat内でグループID <code>CCCOEG.3895</code> を検索し参加したのち、開催時間になりましたらGroupインスタンスにJoinをお願いします。
                         </p>
                     </Col>
                     <Col>
@@ -48,7 +48,8 @@ export default function AccessPage() {
                         <div style={{height: 240 + "px"}}>
                             <h1>Shooting Range</h1>
                             <p>また、合わせてProject
-                                Centurionのアセットを用いたシューティングレンジも公開しております。</p>
+                                Centurionのアセットを用いた<a href={"/vrcshootingrange"}>シューティングレンジ</a>も公開しております。
+                            </p>
                             <p>こだわりのサウンド、BB弾特有の挙動をぜひ試してみてください。</p>
                         </div>
                         <VRCLikeEmbed
