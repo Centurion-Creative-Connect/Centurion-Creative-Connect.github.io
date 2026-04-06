@@ -11,6 +11,7 @@ authors:
   - gelato
   - elvie
   - claudia
+  - hazuki
 draft: false
 unlisted: true
 ---

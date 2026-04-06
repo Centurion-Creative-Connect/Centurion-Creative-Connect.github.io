@@ -101,7 +101,7 @@ const config = {
                     {
                         title: 'More',
                         items: [
-                            {label: 'Blog', href: '/blog/',},
+                            // {label: 'Blog', href: '/blog/',},
                             {label: 'Booth', href: 'https://cccofficialshop.booth.pm/'},
                             {label: 'GitHub', href: 'https://github.com/centurion-creative-connect/',},
                             {
