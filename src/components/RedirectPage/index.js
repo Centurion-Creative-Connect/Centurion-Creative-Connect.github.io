@@ -24,7 +24,7 @@ export default function RedirectPage(props) {
             <Layout title={props.title} description={props.description}>
                 <Head>
                     <meta name={"twitter:card"} content={props.content ?? "summary"}/>
-                    {/*<meta httpEquiv="refresh" content={"0; url=" + props.redirect}/>*/}
+                    <meta httpEquiv="refresh" content={"0; url=" + props.redirect}/>
                 </Head>
                 <RedirectPageBody link={props.redirect}/>
             </Layout>
@@ -35,7 +35,7 @@ export default function RedirectPage(props) {
         <Layout title={props.title} description={props.description}>
             <Head>
                 <meta name={"twitter:card"} content={props.content ?? "summary_large_image"}/>
-                {/*<meta httpEquiv="refresh" content={"0; url=" + props.redirect}/>*/}
+                <meta httpEquiv="refresh" content={"0; url=" + props.redirect}/>
                 <meta property={"og:image"} content={props.image}/>
                 <meta name={"og:image:alt"} content={props.alt}/>
             </Head>
