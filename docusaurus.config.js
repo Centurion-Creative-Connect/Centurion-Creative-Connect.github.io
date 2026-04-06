@@ -74,8 +74,8 @@ const config = {
                         title: 'Docs',
                         items: [
                             {label: 'System', href: 'https://system.centurioncc.org/',},
-                            {label: 'System.Commands', href: 'https://commands.system.centurioncc.org'},
-                            {label: 'System.VoiceCommsIntegration', href: 'https://vci.system.centurioncc.org/'},
+                            // {label: 'System.Commands', href: 'https://commands.system.centurioncc.org'},
+                            // {label: 'System.VoiceCommsIntegration', href: 'https://vci.system.centurioncc.org/'},
                         ],
                     },
                     {

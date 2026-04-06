@@ -80,7 +80,7 @@ export default function Index() {
         },
         {
             name: "claudia-s",
-            image: require("@site/static/img/profile/Claudia.png").default,
+            image: require("@site/static/img/profile/Claudia.jpg").default,
             description: <>サブスタッフ
                 <ul>
                     <li>マップ制作</li>
@@ -93,24 +93,28 @@ export default function Index() {
     const ProdStaffList = [
         {
             name: "Gelato_RF",
-            image: require("@site/static/img/profile/GelatoRF.png").default,
+            image: require("@site/static/img/profile/GelatoRF.jpg").default,
             description: <>マップ制作・サンプルアバター調整</>,
             x_url: "https://twitter.com/Gepard_RF"
         },
         {
             name: "えるびー",
-            image: require("@site/static/img/profile/Elvie.png").default,
+            image: require("@site/static/img/profile/Elvie.jpg").default,
             description: <>広報担当・動画制作</>,
             x_url: "https://twitter.com/ElviE___"
         },
+        {
+            name: "葉月しおん",
+            image: require("@site/static/img/profile/Placeholder.jpg").default,
+            description: <>動画BGM制作</>,
+            x_url: "https://twitter.com/hazuki4499"
+        }
     ];
 
     const SpecialThanksList = [{
         name: "しげひろ deNAFUCO", description: <>貸出アバター</>, x_url: "https://twitter.com/gaku2_sigehiro",
     }, {
         name: "くっしーEX", description: <>SE制作、編集</>, x_url: "https://twitter.com/feriaEX"
-    }, {
-        name: "葉月しおん", description: <>動画BGM作成</>, x_url: "https://twitter.com/haduki4499"
     }, {
         name: "だめがね", description: <>ポスター制作</>, x_url: "https://twitter.com/emegane1029"
     }, {
