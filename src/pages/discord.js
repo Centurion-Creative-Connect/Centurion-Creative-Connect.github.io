@@ -1,18 +1,9 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Head from "@docusaurus/Head";
+import RedirectPage from "../components/RedirectPage";
 
 export default function Redirect() {
-    const {siteConfig} = useDocusaurusContext();
-    return (
-        <Head>
-            <meta name={"description"} content={"CCC公式コミュニティサーバー (Discord)"}/>
-            <meta name={"twitter:card"} content={"summary"}/>
-            <meta name={"twitter:site"} content={"VRSGF_Centurion"}/>
-            <meta name={"twitter:creator"} content={"VRSGF_Centurion"}/>
-            <meta name={"og:title"} content={"CCC公式コミュニティサーバー (Discord) | Centurion Creative Connect"}/>
-            <meta name={"og:description"}
-                  content={"Centurion Creative Connect 公式 Discord"}/>
-            <meta httpEquiv="refresh" content={"0; url=https://discord.com/invite/y66JZ4kAp8"}/>
-        </Head>
-    )
+    return (<RedirectPage
+        title="CCC公式コミュニティサーバー (Discord)"
+        description="参加者同士の交流や開催日時の連絡、システム使用者のサポート、X では見れない制作の進捗などを確認することができます。"
+        redirect="https://discord.com/invite/y66JZ4kAp8"
+    />)
 }
