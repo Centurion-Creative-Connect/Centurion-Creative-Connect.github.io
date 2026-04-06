@@ -32,55 +32,78 @@ function SpecialThanks({name, description, x_url}) {
 }
 
 export default function Index() {
-    const EventStaffList = [{
-        name: "Nuinomi", image: require("@site/static/img/profile/Nuinomi.jpg").default, description: <>オーナー
-            <ul>
-                <li>モデル制作</li>
-                <li>マップ制作</li>
-                <li>公式Twitter運営</li>
-            </ul>
-        </>, x_url: "https://twitter.com/Nuinomi_9193",
-    }, {
-        name: "DerpyNewbie", image: require("@site/static/img/profile/DerpyNewbie.jpg").default, description: <>プログラマー
-            <ul>
-                <li>うにちーえんじにあ</li>
-                <li>うぇぶえんじにあ</li>
-            </ul>
-        </>, x_url: "https://twitter.com/DerpyNewbie",
-    }, {
-        name: "at_suma", image: require("@site/static/img/profile/Suma.jpg").default, description: <>メインスタッフ <ul>
-            <li>広報担当・動画制作</li>
-        </ul></>, x_url: "https://twitter.com/suma_VRC",
-    }, {
-        name: "キンロク", image: require("@site/static/img/profile/Kinroku.jpg").default, description: <>メインスタッフ
-            <ul>
-                <li>マップ制作</li>
-            </ul>
-        </>, x_url: "https://twitter.com/Chiquita_Dforce",
-    }, {
-        name: "Sweet [甘王] king", image: require("@site/static/img/profile/Amaou.jpg").default, description: <>サブスタッフ
-            <ul>
-                <li>マップ制作</li>
-            </ul>
-        </>, x_url: "https://twitter.com/KING84196979",
-    },];
+    const EventStaffList = [
+        {
+            name: "Nuinomi", image: require("@site/static/img/profile/Nuinomi.jpg").default, description: <>オーナー
+                <ul>
+                    <li>モデル制作</li>
+                    <li>マップ制作</li>
+                    <li>公式Twitter運営</li>
+                </ul>
+            </>, x_url: "https://twitter.com/Nuinomi_9193",
+        },
+        {
+            name: "DerpyNewbie",
+            image: require("@site/static/img/profile/DerpyNewbie.jpg").default,
+            description: <>プログラマー
+                <ul>
+                    <li>うにちーえんじにあ</li>
+                    <li>うぇぶえんじにあ</li>
+                </ul>
+            </>,
+            x_url: "https://twitter.com/DerpyNewbie",
+        },
+        {
+            name: "at_suma",
+            image: require("@site/static/img/profile/Suma.jpg").default,
+            description: <>メインスタッフ <ul>
+                <li>広報担当・動画制作</li>
+            </ul></>,
+            x_url: "https://twitter.com/suma_VRC",
+        },
+        {
+            name: "キンロク", image: require("@site/static/img/profile/Kinroku.jpg").default, description: <>メインスタッフ
+                <ul>
+                    <li>マップ制作</li>
+                </ul>
+            </>, x_url: "https://twitter.com/Chiquita_Dforce",
+        },
+        {
+            name: "Sweet [甘王] king",
+            image: require("@site/static/img/profile/Amaou.jpg").default,
+            description: <>メインスタッフ
+                <ul>
+                    <li>マップ制作</li>
+                </ul>
+            </>,
+            x_url: "https://twitter.com/KING84196979",
+        },
+        {
+            name: "claudia-s",
+            image: require("@site/static/img/profile/Claudia.png").default,
+            description: <>サブスタッフ
+                <ul>
+                    <li>マップ制作</li>
+                </ul>
+            </>,
+            x_url: "https://twitter.com/clau_dia_s"
+        }
+    ];
 
-    const ProdStaffList = [{
-        name: "Gelato_RF",
-        image: require("@site/static/img/profile/GelatoRF.png").default,
-        description: <>マップ制作・サンプルアバター調整</>,
-        x_url: "https://twitter.com/Gepard_RF"
-    }, {
-        name: "えるびー",
-        image: require("@site/static/img/profile/Elvie.png").default,
-        description: <>広報担当・動画制作</>,
-        x_url: "https://twitter.com/ElviE___"
-    }, {
-        name: "claudia-s",
-        image: require("@site/static/img/profile/Claudia.png").default,
-        description: <>公式ホームページ運営</>,
-        x_url: "https://twitter.com/clau_dia_s"
-    }];
+    const ProdStaffList = [
+        {
+            name: "Gelato_RF",
+            image: require("@site/static/img/profile/GelatoRF.png").default,
+            description: <>マップ制作・サンプルアバター調整</>,
+            x_url: "https://twitter.com/Gepard_RF"
+        },
+        {
+            name: "えるびー",
+            image: require("@site/static/img/profile/Elvie.png").default,
+            description: <>広報担当・動画制作</>,
+            x_url: "https://twitter.com/ElviE___"
+        },
+    ];
 
     const SpecialThanksList = [{
         name: "しげひろ deNAFUCO", description: <>貸出アバター</>, x_url: "https://twitter.com/gaku2_sigehiro",
