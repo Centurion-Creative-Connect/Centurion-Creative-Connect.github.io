@@ -62,7 +62,7 @@ const config = {
                         {to: '/faq', label: 'FAQ', position: 'left'},
                         // {to: '/blog', label: 'Blog', position: 'left'},
                         {
-                            href: 'https://www.youtube.com/channel/UC7IM88tUXpViibgt24pN0oA',
+                            href: 'https://www.youtube.com/@CenturionCreativeConnect',
                             position: 'right',
                             className: 'icon icon-youtube'
                         },
